@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 60vh;
+    background-image: linear-gradient(to top, rgba(250, 14, 152, 0.822)0%, rgba(233, 10, 103, 0.89) 100%),
+    url(../portadafoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+
+
+
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav  a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Main */
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color: rgb(24, 16, 16);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.galeria {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 76, 155, 0.815);
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: black;
+    margin: auto;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.fondo {
+    height: 900px;
+    position: relative;
+    background-image: url();
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+    color: black;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 64px;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 100%;
+}
+
+
+/*Iconos de las redes sociales*/
+
+.container-redes{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-redes a{
+    margin-top: 4px;
+}
+
+.container-redes img{
+    width: 60px;
+    padding: 4px;
+    background: rgba(0,0,0,0.0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+
+.container-redes a:hover img{
+    background: rgba(0,0,0,0.10);
+}
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+    header .titulo {
+        font-size: 75px;
+    }
+    .none {
+        display: none
+    }
+    .imagenes {
+        flex-grow: 1;
+    }
+    .card {
+        width: 90%;
+    }
+    .fondo {
+        height: auto;
+    }
+    .especial {
+        display: none;
+    }
+    .cliente {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+    header .titulo {
+        font-size: 65px;
+    }
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+    .titulo-patrocinadores {
+        font-size: 46px;
+    }
+    .subtitulo-patrocinadores {
+        font-size: 20px;
+    }
+}
